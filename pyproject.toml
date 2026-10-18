@@ -1,0 +1,20 @@
+[project]
+name = "mrnet-knee"
+version = "1.0.0"
+description = "Abnormality, ACL and meniscal tear detection on MRNet knee MRI with patient-aligned multi-plane fusion"
+requires-python = ">=3.10"
+authors = [{ name = "Mahendra Sai Divi" }]
+
+[tool.setuptools]
+packages = ["mrnet"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["archive"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
